@@ -1,0 +1,17 @@
+<div id="formulario" class="formulario-container-grid">
+    <div class="campo-formulario">
+        <h3 class="fazer-login">Login</h3>
+        <form #loginForm="ngForm"(ngSubmit)="onSubmit">
+            <div class="campo-label">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Ex.: email@email.com" [(ngModel)]="loginModel.email">
+            </div>
+
+            <div class="campo-label">
+                <label for="senha">Senha</label>
+                <input type="password" name="password" id="senha" placeholder="Sua senha aqui" [(ngModel)]="loginModel.password">
+            </div>
+            <input type="submit" id="botao-enviar" value="Fazer login">
+        </form>
+        <p>Não possui cadastro?<a href=""> Clique aqui </a></p>
+    </div>
